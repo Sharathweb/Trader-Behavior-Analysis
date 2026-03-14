@@ -156,6 +156,26 @@ A simple **Logistic Regression model** was built to predict whether a trade will
 
 ---
 
+## Methodology
+
+The analysis combines market sentiment data from the Fear and Greed Index
+with historical trader transaction data. The datasets were cleaned,
+processed, and merged using a common Date field.
+
+Key preprocessing steps included:
+- converting timestamps into datetime format
+- extracting daily trading activity
+- merging sentiment data with trading records
+- creating additional features such as win rate,
+trade size categories, and trader frequency segments
+
+Exploratory data analysis was then performed to understand the relationship
+between market sentiment and trading behavior. Visualizations such as
+boxplots, countplots, and time-series plots were used to identify patterns
+in trading activity and profitability.
+
+--
+
 ## Key Insights
 
 1. **Trading activity increases during Greed and Extreme Greed periods**, suggesting bullish sentiment encourages more market participation.
